@@ -1,3 +1,10 @@
+## This client is only meant to be used for RSPS,
+> ![NOTE]
+> If you want to use this client for live game please goto: https://github.com/jbx5/devious-client
+
+* Ran out of time so will update this tomorrow but for now the args to run:
+  * In run field write: `run --args="--developer-mode --debug --jav_config https://raw.githubusercontent.com/AlterRSPS/Resources/main/docs/resources/jav_config.ws" -- -x checkStyleMain -x checkStyleTest -x test`
+
 ###
 This is a fork of Unethicalite that I'm looking to actively maintain since I think this would be a nice learning experience for me.
 
