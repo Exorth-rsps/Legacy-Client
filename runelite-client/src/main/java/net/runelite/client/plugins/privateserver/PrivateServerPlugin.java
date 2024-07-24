@@ -34,13 +34,11 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import lombok.extern.slf4j.Slf4j;
 import net.runelite.api.Client;
-import net.runelite.client.RuneLite;
 import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.EventBus;
 import net.runelite.client.events.ConfigChanged;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
-import net.runelite.client.plugins.privateserver.PrivateServerConfig;
 
 @PluginDescriptor(
         name = "Private Server",
@@ -103,7 +101,9 @@ public class PrivateServerPlugin extends Plugin
         if (!config.modulus().equals(""))
         {
             client.setModulus(new BigInteger(config.modulus(), 16));
-        } else {
+        }
+        else
+        {
             String message = "Modulus is empty.\n";
             JOptionPane.showMessageDialog(new JFrame(), message, "Error",
                     JOptionPane.WARNING_MESSAGE);
