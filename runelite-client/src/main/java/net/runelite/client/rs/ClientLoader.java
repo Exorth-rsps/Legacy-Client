@@ -101,7 +101,7 @@ public class ClientLoader implements Supplier<Applet>
 		this.updateCheckMode = updateCheckMode;
 		this.worldSupplier = new WorldSupplier(okHttpClient);
 		this.runtimeConfigLoader = runtimeConfigLoader;
-		this.javConfigUrl = javConfigUrl;
+		this.javConfigUrl = "https://raw.githubusercontent.com/AlterRSPS/Resources/main/docs/resources/jav_config.ws";
 	}
 
 	@Override

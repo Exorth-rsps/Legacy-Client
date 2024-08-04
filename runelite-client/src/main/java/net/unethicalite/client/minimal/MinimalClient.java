@@ -261,7 +261,7 @@ public class MinimalClient
 			final long start = System.currentTimeMillis();
 
 			RuneLite.setInjector(Guice.createInjector(new MinimalModule(
-					options.has("developer-mode"),
+					true,
 					okHttpClient,
 					clientLoader,
 					options.valueOf(configfile),
