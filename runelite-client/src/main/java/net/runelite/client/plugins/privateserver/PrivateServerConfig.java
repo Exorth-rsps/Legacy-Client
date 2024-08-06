@@ -30,7 +30,7 @@ public interface PrivateServerConfig extends Config
     )
     default String modulus()
     {
-        return " --";
+        return "123";
     }
 
 }

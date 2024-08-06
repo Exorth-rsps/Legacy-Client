@@ -28,6 +28,7 @@ package net.runelite.client.plugins.privateserver;
 
 import com.google.inject.Provides;
 import java.math.BigInteger;
+import java.text.NumberFormat;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 import javax.swing.JFrame;
@@ -98,15 +99,13 @@ public class PrivateServerPlugin extends Plugin
 
     private void updateConfig()
     {
-        if (!config.modulus().equals(""))
-        {
+        try {
             client.setModulus(new BigInteger(config.modulus(), 16));
-        }
-        else
-        {
-            String message = "Modulus is empty.\n";
+        } catch (NumberFormatException e) {
+            String message = "RSA Key is invalid. Go to Private Server Plugin Settings and fix it. \n";
             JOptionPane.showMessageDialog(new JFrame(), message, "Error",
                     JOptionPane.WARNING_MESSAGE);
         }
     }
+
 }
