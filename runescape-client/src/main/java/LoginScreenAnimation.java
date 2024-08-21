@@ -286,7 +286,7 @@ public class LoginScreenAnimation {
 			int var11;
 			int var12;
 			int var13;
-			for (var11 = 0; var11 < this.field1285 * 10000; ++var11) {
+			for (var11 = 0; var11 < this.field1285; ++var11) {
 				var12 = (int)(Math.random() * (double)var10) + var17;
 				var13 = (int)(Math.random() * (double)var16) + var16;
 				this.field1278[var12 + (var13 << 7)] = 192;
