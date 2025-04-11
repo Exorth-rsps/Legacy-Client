@@ -167,7 +167,7 @@ public class ClientLoader implements Supplier<Applet>
 
 				SplashScreen.stage(.40, null, "Loading client");
 
-				File oprsInjected = new File(System.getProperty("user.home") + "/.openosrs/cache/injected-client.jar");
+				File oprsInjected = new File(System.getProperty("user.home") + "/.exorth-legacy/cache/injected-client.jar");
 				if (updateCheckMode == AUTO)
 				{
 					writeInjectedClient(oprsInjected);
