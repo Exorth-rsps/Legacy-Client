@@ -81,7 +81,7 @@ public class MessagePanel extends JPanel
 		c.gridy++;
 
 		// alternate message action
-		messageArea = new JLabel("<html><div style='text-align:center;'>Open-source client for Old School RuneScape with more functionality and less restrictions.</div></html>")
+		messageArea = new JLabel("<html><div style='text-align:center;'>The Childhood RSPS Experience!</div></html>")
 		{
 			@Override
 			public Dimension getPreferredSize()

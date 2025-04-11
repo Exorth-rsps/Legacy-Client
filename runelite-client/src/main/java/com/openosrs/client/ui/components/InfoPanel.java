@@ -56,7 +56,7 @@ public class InfoPanel extends JPanel
 	private static final Color DARK_GREY = new Color(10, 10, 10, 255);
 	private static final BufferedImage TRANSPARENT_LOGO = ImageUtil.getResourceStreamFromClass(InfoPanel.class, "/openosrs.png");
 	private static final Dimension VERSION_SIZE = new Dimension(PANEL_SIZE.width, 25);
-	private static final File RUNELITE_DIR = new File(System.getProperty("user.home"), ".openosrs");
+	private static final File RUNELITE_DIR = new File(System.getProperty("user.home"), ".exorthlegacy");
 	private static final File LOGS_DIR = new File(RUNELITE_DIR, "logs");
 
 	public InfoPanel()
@@ -76,7 +76,7 @@ public class InfoPanel extends JPanel
 		final ImageIcon transparentLogo = new ImageIcon();
 		if (TRANSPARENT_LOGO != null)
 		{
-			transparentLogo.setImage(TRANSPARENT_LOGO.getScaledInstance(128, 128, Image.SCALE_SMOOTH));
+			transparentLogo.setImage(TRANSPARENT_LOGO.getScaledInstance(150, 150, Image.SCALE_SMOOTH));
 		}
 		final JLabel logo = new JLabel(transparentLogo);
 
@@ -88,14 +88,14 @@ public class InfoPanel extends JPanel
 		c.weighty = 0;
 
 		// OpenOSRS version
-		this.add(createPanelTextButton("Devious Client Version: " + OpenOSRS.SYSTEM_VERSION), c);
+		this.add(createPanelTextButton("Exorth Legacy Client Version: " + OpenOSRS.SYSTEM_VERSION), c);
 		c.gridy++;
 
 		final JLabel logsFolder = createPanelButton("Open logs folder", null, () -> LinkBrowser.openLocalFile(LOGS_DIR));
 		this.add(logsFolder, c);
 		c.gridy++;
 
-		final JLabel discord = createPanelButton("Get help on Discord", "Instant invite link to join the openosrs discord", () -> LinkBrowser.browse(RuneLiteProperties.getDiscordInvite()));
+		final JLabel discord = createPanelButton("Get help on Discord", "Instant invite link to join the Exorth discord", () -> LinkBrowser.browse(RuneLiteProperties.getDiscordInvite()));
 		this.add(discord, c);
 		c.gridy++;
 
