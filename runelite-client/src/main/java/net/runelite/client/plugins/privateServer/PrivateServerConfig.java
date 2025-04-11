@@ -19,7 +19,7 @@ public interface PrivateServerConfig extends Config
     )
     default String codebase()
     {
-        return "http://127.0.0.1";
+        return "http://play.exorth.net";
     }
 
     @ConfigItem(
@@ -30,7 +30,7 @@ public interface PrivateServerConfig extends Config
     )
     default String modulus()
     {
-        return "83ff79a3e258b99ead1a70e1049883e78e513c4cdec538d8da9483879a9f81689c0c7d146d7b82b52d05cf26132b1cda5930eeef894e4ccf3d41eebc3aabe54598c4ca48eb5a31d736bfeea17875a35558b9e3fcd4aebe2a9cc970312a477771b36e173dc2ece6001ab895c553e2770de40073ea278026f36961c94428d8d7db";
+        return "af71db26df7dd7e18e4a245c1654abfbbb63a24ca162799e9881467218e788ae826c5614d8966ca4e9e3b7485ffbfa0d6e266236effc143c116ffb9a8b437e1eb52d25201b7bbc296d8ec24c29ef9a8dd286b71f1b1db18fd128d0d424da2699a3b2dafc6044455bbe136f754a2c12b06fc7f453b427643fa2b4491e9fed381f";
     }
 
 }
